@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOSSR Marketplace - ORP Panel Access</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="style.css">
+</head>
+
+<body>
+
+<div class="container py-4">
+
+    <!-- HEADER -->
+
+    <div class="text-center mb-5">
+
+        <h1 class="display-5 fw-bold text-primary">
+            FORM ORP Panel Access
+        </h1>
+
+        <h4>
+            Fostering Open Science in Social Science Research
+        </h4>
+
+        <p class="text-muted">
+            Modulo FOSSR-ORP-F1 · versione 1.0
+        </p>
+
+    </div>
+
+    <!-- INTRODUZIONE -->
+
+    <div class="card mb-4">
+
+        <div class="card-header">
+            COME FUNZIONA QUESTA RICHIESTA
+        </div>
+
+        <div class="card-body">
+
+            <p>
+                Il modulo si compila nell'area ORP del Marketplace FOSSR.
+            </p>
+
+            <ul>
+
+                <li>Salvataggio in bozza disponibile</li>
+
+                <li>
+                    Identificativo automatico:
+                    ORP-F1-AAAA-NNN
+                </li>
+
+                <li>
+                    Workflow:
+                    T1 → T2 → T3 → T4 → T5
+                </li>
+
+                <li>
+                    Valutazione entro 10 giorni lavorativi
+                </li>
+
+                <li>
+                    Validazione entro 15 giorni lavorativi
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- PROGRESS -->
+
+    <div class="progress mb-4">
+
+        <div class="progress-bar"
+             id="progressBar"
+             style="width:16%">
+             Sezione 1 di 6
+        </div>
+
+    </div>
+
+    <!-- FORM -->
+
+    <form id="orpForm">
+
+        <!-- ====================== -->
+        <!-- SEZIONE 1 -->
+        <!-- ====================== -->
+
+        <section class="step active">
+
+            <div class="card">
+
+                <div class="card-header">
+                    SEZIONE 1 · DATI DEL RICHIEDENTE
+                </div>
+
+                <div class="card-body">
+
+                    <div class="row">
+
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">
+                                Nome e Cognome *
+                            </label>
+
+                            <input type="text"
+                                   id="fullName"
+                                   class="form-control"
+                                   required>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+
+                            <label class="form-label">
+                                Ente o istituzione *
+                            </label>
+
+                            <input type="text"
+                                   id="institution"
+                                   class="form-control"
+                                   required>
+
+                        </div>
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label>
+                            Dipartimento, istituto o unità
+                        </label>
+
+                        <input type="text"
+                               class="form-control">
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-md-6">
+
+                            <label>
+                                Ruolo *
+                            </label>
+
+                            <input type="text"
+                                   class="form-control"
+                                   required>
+
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <label>
+                                Paese *
+                            </label>
+
+                            <input type="text"
+                                   class="form-control"
+                                   required>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row mt-3">
+
+                        <div class="col-md-6">
+
+                            <label>
+                                Email istituzionale *
+                            </label>
+
+                            <input type="email"
+                                   class="form-control"
+                                   required>
+
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <label>
+                                Telefono
+                            </label>
+
+                            <input type="tel"
+                                   class="form-control">
+
+                        </div>
+
+                    </div>
+
+                    <div class="row mt-3">
+
+                        <div class="col-md-6">
+
+                            <label>
+                                ORCID
+                            </label>
+
+                            <input type="text"
+                                   class="form-control">
+
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <label>
+                                Curriculum Scientifico (PDF max 5 MB) *
+                            </label>
+
+                            <input type="file"
+                                   accept=".pdf"
+                                   class="form-control"
+                                   required>
+
+                        </div>
+
+                    </div>
+
+                    <div class="mt-4">
+
+                        <label>
+                            Componenti del gruppo di ricerca
+                        </label>
+
+                        <textarea rows="4"
+                                  class="form-control"></textarea>
+
+                    </div>
+
+                    <div class="mt-4">
+
+                        <label class="fw-bold">
+                            Categoria del richiedente *
+                        </label>
+
+                        <div class="form-check">
+                            <input type="radio"
+                                   name="category"
+                                   class="form-check-input"
+                                   required>
+
+                            <label class="form-check-label">
+                                Ricercatore o docente
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="radio"
+                                   name="category"
+                                   class="form-check-input">
+
+                            <label class="form-check-label">
+                                Dottorando o assegnista
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="radio"
+                                   name="category"
+                                   class="form-check-input">
+
+                            <label class="form-check-label">
+                                Pubblica Amministrazione
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="radio"
+                                   name="category"
+                                   class="form-check-input">
+
+                            <label class="form-check-label">
+                                Decisore pubblico
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="radio"
+                                   name="category"
+                                   class="form-check-input">
+
+                            <label class="form-check-label">
+                                Altro
+                            </label>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ====================== -->
+        <!-- SEZIONE 2 -->
+        <!-- ====================== -->
+
+        <section class="step">
+
+            <div class="card">
+
+                <div class="card-header">
+                    SEZIONE 2 · PROGETTO DI RICERCA
+                </div>
+
+                <div class="card-body">
+
+                    <div class="mb-3">
+
+                        <label>
+                            Titolo del progetto *
+                        </label>
+
+                        <input type="text"
+                               class="form-control"
+                               required>
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label>
+                            Acronimo
+                        </label>
+
+                        <input type="text"
+                               class="form-control">
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label>
+                            Ente finanziatore
+                        </label>
+
+                        <input type="text"
+                               class="form-control">
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label>
+                            Durata del progetto *
+                        </label>
+
+                        <input type="text"
+                               class="form-control"
+                               required>
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label>
+                            Abstract *
+                        </label>
+
+                        <textarea id="abstract"
+                                  maxlength="2500"
+                                  rows="6"
+                                  class="form-control"
+                                  required></textarea>
+
+                        <small id="counter">
+                            0 / 2500
+                        </small>
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label>
+                            Domande di ricerca *
+                        </label>
+
+                        <textarea rows="4"
+                                  class="form-control"
+                                  required></textarea>
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label>
+                            Rilevanza scientifica *
+                        </label>
+
+                        <textarea rows="4"
+                                  class="form-control"
+                                  required></textarea>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+		
+		
+		<!-- ====================== -->
+        <!-- SEZIONE 3 -->
+        <!-- ====================== -->
+
+			<section class="step">
+
+    <div class="card">
+
+        <div class="card-header">
+            SEZIONE 3 · RILEVAZIONE PROPOSTA
+        </div>
+
+        <div class="card-body">
+
+            <div class="mb-3">
+                <label class="form-label">
+                    Temi della rilevazione *
+                </label>
+
+                <textarea class="form-control"
+                          rows="4"
+                          required></textarea>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-4 mb-3">
+                    <label class="form-label">
+                        Numero di domande *
+                    </label>
+
+                    <input type="number"
+                           class="form-control"
+                           required>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label class="form-label">
+                        Durata stimata (minuti) *
+                    </label>
+
+                    <input type="number"
+                           class="form-control"
+                           required>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label class="form-label">
+                        Numerosità richiesta *
+                    </label>
+
+                    <input type="number"
+                           class="form-control"
+                           required>
+                </div>
+
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">
+                    Popolazione target *
+                </label>
+
+                <textarea class="form-control"
+                          rows="4"
+                          required></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">
+                    Quote o stratificazione richieste
+                </label>
+
+                <textarea class="form-control"
+                          rows="3"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">
+                    Numero di rilevazioni previste *
+                </label>
+
+                <input type="text"
+                       class="form-control"
+                       required>
+            </div>
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Necessità di ricontattare gli stessi rispondenti
+                </label>
+
+                <select class="form-select">
+                    <option>No</option>
+                    <option>Sì</option>
+                </select>
+
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">
+                    Periodo desiderato di somministrazione *
+                </label>
+
+                <input type="text"
+                       class="form-control"
+                       required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">
+                    Bozza del questionario (PDF max 5 MB) *
+                </label>
+
+                <input type="file"
+                       accept=".pdf"
+                       class="form-control"
+                       required>
+            </div>
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Esigenze particolari di somministrazione
+                </label>
+
+                <textarea class="form-control"
+                          rows="4"></textarea>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+	
+		<!-- ====================== -->
+        <!-- SEZIONE 4 -->
+        <!-- ====================== -->
+	
+		<section class="step">
+
+    <div class="card">
+
+        <div class="card-header">
+            SEZIONE 4 · DATI PERSONALI E ASPETTI ETICI
+        </div>
+
+        <div class="card-body">
+
+            <h5 class="mb-3">
+                Categorie particolari di dati personali *
+            </h5>
+
+            <div class="form-check">
+                <input class="form-check-input"
+                       type="radio"
+                       name="specialData"
+                       required>
+
+                <label class="form-check-label">
+                    No
+                </label>
+            </div>
+
+            <div class="form-check mb-4">
+                <input class="form-check-input"
+                       type="radio"
+                       name="specialData">
+
+                <label class="form-check-label">
+                    Sì
+                </label>
+            </div>
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Se sì, quali dati e con quale finalità
+                </label>
+
+                <textarea class="form-control"
+                          rows="4"></textarea>
+
+            </div>
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Approvazione del comitato etico *
+                </label>
+
+                <select class="form-select"
+                        required>
+
+                    <option value="">
+                        Seleziona
+                    </option>
+
+                    <option>
+                        Non richiesta
+                    </option>
+
+                    <option>
+                        Richiesta e in corso
+                    </option>
+
+                    <option>
+                        Ottenuta
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Allegato approvazione etica (PDF)
+                </label>
+
+                <input type="file"
+                       accept=".pdf"
+                       class="form-control">
+
+            </div>
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Finalità del trattamento *
+                </label>
+
+                <textarea class="form-control"
+                          rows="3"
+                          required></textarea>
+
+            </div>
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Base giuridica proposta *
+                </label>
+
+                <textarea class="form-control"
+                          rows="3"
+                          required></textarea>
+
+            </div>
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Periodo di conservazione richiesto *
+                </label>
+
+                <input type="text"
+                       class="form-control"
+                       required>
+
+            </div>
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Trasferimento dati fuori SEE
+                </label>
+
+                <textarea class="form-control"
+                          rows="3"></textarea>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+	
+	
+		<!-- ====================== -->
+        <!-- SEZIONE 5 -->
+        <!-- ====================== -->
+
+		<section class="step">
+
+    <div class="card">
+
+        <div class="card-header">
+            SEZIONE 5 · OPEN SCIENCE E CONTRIBUZIONE
+        </div>
+
+        <div class="card-body">
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Prodotti attesi *
+                </label>
+
+                <textarea class="form-control"
+                          rows="4"
+                          required></textarea>
+
+            </div>
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Periodo di embargo richiesto
+                </label>
+
+                <textarea class="form-control"
+                          rows="3"></textarea>
+
+            </div>
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Modalità di deposito dei risultati
+                </label>
+
+                <textarea class="form-control"
+                          rows="3"></textarea>
+
+            </div>
+
+            <h5 class="mt-4">
+                Impegni obbligatori *
+            </h5>
+
+            <div class="form-check">
+                <input class="form-check-input"
+                       type="checkbox"
+                       required>
+
+                <label class="form-check-label">
+                    Citare ORP e FOSSR
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input"
+                       type="checkbox"
+                       required>
+
+                <label class="form-check-label">
+                    Riconoscere il finanziamento PNRR
+                </label>
+            </div>
+
+            <div class="form-check mb-3">
+                <input class="form-check-input"
+                       type="checkbox"
+                       required>
+
+                <label class="form-check-label">
+                    Trasmettere copia delle pubblicazioni
+                </label>
+            </div>
+
+            <h5>
+                Impegni facoltativi
+            </h5>
+
+            <div class="form-check">
+                <input class="form-check-input"
+                       type="checkbox">
+
+                <label class="form-check-label">
+                    Depositare dati e documentazione nel FOSSR Open Cloud
+                </label>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+		<!-- ====================== -->
+        <!-- SEZIONE 6 -->
+        <!-- ====================== -->
+
+		<section class="step">
+
+    <div class="card">
+
+        <div class="card-header">
+            SEZIONE 6 · DICHIARAZIONI
+        </div>
+
+        <div class="card-body">
+
+            <div class="form-check">
+                <input class="form-check-input"
+                       type="checkbox"
+                       required>
+
+                <label class="form-check-label">
+                    Le informazioni fornite sono veritiere e complete
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input"
+                       type="checkbox"
+                       required>
+
+                <label class="form-check-label">
+                    Nessuna finalità commerciale
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input"
+                       type="checkbox"
+                       required>
+
+                <label class="form-check-label">
+                    Accetto la FOSSR User Access Policy
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input"
+                       type="checkbox"
+                       required>
+
+                <label class="form-check-label">
+                    Presa visione dell'informativa privacy
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input"
+                       type="checkbox"
+                       required>
+
+                <label class="form-check-label">
+                    Non tenterò la reidentificazione dei rispondenti
+                </label>
+            </div>
+
+            <div class="form-check mb-4">
+                <input class="form-check-input"
+                       type="checkbox"
+                       required>
+
+                <label class="form-check-label">
+                    Non redistribuirò i dati ricevuti
+                </label>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-6">
+                    <label class="form-label">
+                        Luogo e data
+                    </label>
+
+                    <input type="text"
+                           class="form-control">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+		
+
+        <!-- LE ALTRE SEZIONI (3,4,5,6) -->
+        <!-- proseguiranno con la stessa struttura -->
+		
+		<!-- ========================================= -->
+<!-- SUMMARY BOX -->
+<!-- ========================================= -->
+
+<div id="summaryBox"
+     class="summary-box mt-4">
+</div>
+
+<!-- ========================================= -->
+<!-- NAVIGAZIONE -->
+<!-- ========================================= -->
+
+<div class="text-center mt-4 mb-5">
+
+    <button type="button"
+            id="prevBtn"
+            class="btn btn-secondary">
+        Indietro
+    </button>
+
+    <button type="button"
+            id="nextBtn"
+            class="btn btn-primary">
+        Avanti
+    </button>
+
+    <button type="button"
+            id="saveDraft"
+            class="btn btn-warning">
+        Salva Bozza
+    </button>
+
+    <button type="submit"
+            id="submitBtn"
+            class="btn btn-success d-none">
+        Invia Richiesta
+    </button>
+
+</div>
+
+</form>
+
+<!-- ========================================= -->
+<!-- BACKOFFICE -->
+<!-- ========================================= -->
+
+<section id="backofficeSection"
+         class="card mt-5 d-none">
+
+    <div class="card-header bg-dark text-white">
+        SEZIONE R · RISERVATO AL SERVIZIO
+    </div>
+
+    <div class="card-body">
+
+        <p class="text-muted">
+            Sezione visibile esclusivamente agli operatori autorizzati.
+        </p>
+
+        <table class="table table-bordered workflow-table">
+
+            <thead>
+
+                <tr>
+                    <th>Punto</th>
+                    <th>Evento</th>
+                    <th>Data e Ora</th>
+                    <th>Operatore</th>
+                    <th>Esito / Note</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>T1</td>
+                    <td>Invio Richiesta</td>
+                    <td id="t1Date"></td>
+                    <td></td>
+                    <td id="requestIdentifier"></td>
+                </tr>
+
+                <tr>
+                    <td>T2</td>
+                    <td>Valutazione</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        ☐ In corso
+                        <br>
+                        ☐ Integrazioni richieste
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>T3</td>
+                    <td>Validazione</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        ☐ Validata
+                        <br>
+                        ☐ Non validata
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>T4</td>
+                    <td>Esecuzione</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        Calendario concordato
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>T5</td>
+                    <td>Rilascio</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        Link pacchetto e scadenza
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <hr>
+
+        <h5>
+            Termini del procedimento
+        </h5>
+
+        <table class="table table-striped">
+
+            <thead>
+
+                <tr>
+                    <th>Fase</th>
+                    <th>Termine</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>
+                        Presa in carico (T2)
+                    </td>
+
+                    <td>
+                        10 giorni lavorativi
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Validazione / Diniego (T3)
+                    </td>
+
+                    <td>
+                        15 giorni lavorativi
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Sospensione termini
+                    </td>
+
+                    <td>
+                        Durante richiesta integrazioni
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- SPINNER -->
+<!-- ========================================= -->
+
+<div class="spinner-overlay">
+
+    <div class="spinner-border text-primary"
+         role="status">
+
+        <span class="visually-hidden">
+            Loading...
+        </span>
+
+    </div>
+
+</div>
+
+<!-- ========================================= -->
+<!-- FOOTER -->
+<!-- ========================================= -->
+
+<footer class="footer">
+
+    <hr>
+
+    <p>
+        FOSSR Marketplace · Online Research Panel (ORP)
+    </p>
+
+    <p>
+        FORM ORP Panel Access · Modulo FOSSR-ORP-F1 · Versione 1.0
+    </p>
+
+    <p class="text-muted">
+        Fostering Open Science in Social Science Research
+    </p>
+
+</footer>
+
+</div>
+
+<!-- ========================================= -->
+<!-- SCRIPT -->
+<!-- ========================================= -->
+
+<script src="app.js"></script>
+
+https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.jsscript>
+
+</body>
+
+</html>
+		
+
+    </form>
+
+</div>
+
+<script src="app.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

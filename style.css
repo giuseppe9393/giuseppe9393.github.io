@@ -1,0 +1,530 @@
+/* ====================================================
+   FOSSR ORP PANEL ACCESS
+   style.css
+   ==================================================== */
+
+:root {
+
+    --fossr-primary: #1F3864;
+    --fossr-primary-dark: #152844;
+
+    --fossr-secondary: #E07B39;
+    --fossr-secondary-dark: #c7662d;
+
+    --fossr-success: #198754;
+    --fossr-danger: #dc3545;
+    --fossr-warning: #ffc107;
+
+    --bg-page: #f5f6f8;
+    --bg-card: #ffffff;
+
+    --border-color: #d8dee7;
+
+    --text-color: #212529;
+    --text-muted: #6c757d;
+
+    --shadow:
+        0 4px 12px rgba(0,0,0,.08);
+
+    --radius: 12px;
+}
+
+/* ====================================================
+   BODY
+   ==================================================== */
+
+body {
+
+    background-color: var(--bg-page);
+
+    font-family:
+        "Segoe UI",
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
+
+    color: var(--text-color);
+
+    min-height: 100vh;
+}
+
+/* ====================================================
+   HEADER
+   ==================================================== */
+
+.page-title {
+
+    color: var(--fossr-primary);
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+.page-subtitle {
+
+    color: var(--text-muted);
+
+    margin-bottom: 0;
+}
+
+.intro-text {
+
+    font-size: 1rem;
+
+    line-height: 1.6;
+}
+
+/* ====================================================
+   CARD
+   ==================================================== */
+
+.card {
+
+    border: none;
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+
+    overflow: hidden;
+}
+
+.card-header {
+
+    background-color: var(--fossr-primary);
+
+    color: white;
+
+    font-weight: 600;
+
+    padding: 14px 20px;
+
+    border-bottom: none;
+}
+
+.card-body {
+
+    padding: 25px;
+}
+
+/* ====================================================
+   PROGRESS BAR
+   ==================================================== */
+
+.progress {
+
+    height: 24px;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    background-color: #dee2e6;
+}
+
+.progress-bar {
+
+    background-color: var(--fossr-primary);
+
+    font-weight: 600;
+
+    transition: width .35s ease;
+}
+
+/* ====================================================
+   WIZARD
+   ==================================================== */
+
+.step {
+
+    display: none;
+}
+
+.step.active {
+
+    display: block;
+}
+
+/* ====================================================
+   FORM
+   ==================================================== */
+
+.form-label {
+
+    font-weight: 600;
+
+    margin-bottom: 6px;
+}
+
+.form-control,
+.form-select {
+
+    min-height: 46px;
+
+    border-radius: 8px;
+
+    border: 1px solid var(--border-color);
+}
+
+.form-control:focus,
+.form-select:focus {
+
+    border-color: var(--fossr-primary);
+
+    box-shadow:
+        0 0 0 .20rem rgba(31,56,100,.18);
+}
+
+textarea.form-control {
+
+    min-height: 120px;
+}
+
+/* ====================================================
+   VALIDAZIONE
+   ==================================================== */
+
+.is-invalid {
+
+    border-color: var(--fossr-danger) !important;
+}
+
+.form-check-input:invalid {
+
+    border-color: var(--fossr-danger);
+}
+
+.required-label::after {
+
+    content: " *";
+
+    color: var(--fossr-danger);
+}
+
+/* ====================================================
+   RADIO E CHECKBOX
+   ==================================================== */
+
+.form-check {
+
+    margin-bottom: 10px;
+}
+
+.form-check-label {
+
+    cursor: pointer;
+}
+
+.form-check-input {
+
+    cursor: pointer;
+}
+
+/* ====================================================
+   FILE UPLOAD
+   ==================================================== */
+
+input[type="file"] {
+
+    padding: 10px;
+}
+
+.upload-note {
+
+    font-size: .9rem;
+
+    color: var(--text-muted);
+}
+
+/* ====================================================
+   COUNTER ABSTRACT
+   ==================================================== */
+
+#counter {
+
+    display: block;
+
+    text-align: right;
+
+    margin-top: 6px;
+
+    color: var(--text-muted);
+
+    font-size: .9rem;
+}
+
+/* ====================================================
+   SUMMARY
+   ==================================================== */
+
+.summary-box {
+
+    display: none;
+
+    margin-top: 25px;
+
+    padding: 25px;
+
+    background: white;
+
+    border: 1px solid var(--border-color);
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+}
+
+.summary-box.show {
+
+    display: block;
+}
+
+.summary-box h4 {
+
+    margin-bottom: 20px;
+
+    color: var(--fossr-primary);
+}
+
+.summary-item {
+
+    border-bottom: 1px solid #ececec;
+
+    padding-bottom: 12px;
+
+    margin-bottom: 12px;
+}
+
+/* ====================================================
+   BUTTONS
+   ==================================================== */
+
+.btn {
+
+    min-width: 140px;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+}
+
+.btn-primary {
+
+    background-color: var(--fossr-primary);
+
+    border-color: var(--fossr-primary);
+}
+
+.btn-primary:hover {
+
+    background-color: var(--fossr-primary-dark);
+
+    border-color: var(--fossr-primary-dark);
+}
+
+.btn-warning {
+
+    background-color: var(--fossr-secondary);
+
+    border-color: var(--fossr-secondary);
+
+    color: white;
+}
+
+.btn-warning:hover {
+
+    background-color: var(--fossr-secondary-dark);
+
+    border-color: var(--fossr-secondary-dark);
+
+    color: white;
+}
+
+.btn-success {
+
+    background-color: var(--fossr-success);
+
+    border-color: var(--fossr-success);
+}
+
+/* ====================================================
+   TABELLA BACKOFFICE
+   ==================================================== */
+
+.workflow-table {
+
+    width: 100%;
+}
+
+.workflow-table th {
+
+    background-color: var(--fossr-primary);
+
+    color: white;
+
+    font-weight: 600;
+}
+
+.workflow-table td,
+.workflow-table th {
+
+    vertical-align: middle;
+}
+
+/* ====================================================
+   BADGE STATI
+   ==================================================== */
+
+.status-badge {
+
+    font-size: .85rem;
+
+    font-weight: 600;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+}
+
+.status-inviata {
+
+    background: #cfe2ff;
+}
+
+.status-validata {
+
+    background: #d1e7dd;
+}
+
+.status-rifiutata {
+
+    background: #f8d7da;
+}
+
+.status-esecuzione {
+
+    background: #fff3cd;
+}
+
+/* ====================================================
+   ALERT
+   ==================================================== */
+
+.info-box {
+
+    border-left: 5px solid var(--fossr-primary);
+
+    background: #eef4ff;
+
+    padding: 15px;
+
+    border-radius: 8px;
+}
+
+.warning-box {
+
+    border-left: 5px solid var(--fossr-warning);
+
+    background: #fff8e7;
+
+    padding: 15px;
+
+    border-radius: 8px;
+}
+
+/* ====================================================
+   SPINNER OVERLAY
+   ==================================================== */
+
+.spinner-overlay {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(255,255,255,.75);
+
+    z-index: 9999;
+
+    display: none;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.spinner-overlay.show {
+
+    display: flex;
+}
+
+/* ====================================================
+   FOOTER
+   ==================================================== */
+
+.footer {
+
+    margin-top: 50px;
+
+    text-align: center;
+
+    color: var(--text-muted);
+
+    font-size: .95rem;
+}
+
+/* ====================================================
+   RESPONSIVE
+   ==================================================== */
+
+@media (max-width: 992px) {
+
+    .card-body {
+
+        padding: 20px;
+    }
+
+    .btn {
+
+        width: 100%;
+
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .page-title {
+
+        font-size: 1.8rem;
+    }
+
+    .progress {
+
+        height: 20px;
+    }
+
+    .card-body {
+
+        padding: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    h1 {
+
+        font-size: 1.6rem;
+    }
+
+    .card-body {
+
+        padding: 15px;
+    }
+}
